@@ -11,6 +11,9 @@ importers:
       '@apollo/client':
         specifier: ^3.8.8
         version: 3.11.8(@types/react@18.3.0)(graphql@16.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@jest/globals':
+        specifier: ^29.7.0
+        version: 29.7.0
       '@mdx-js/mdx':
         specifier: ^1.6.22
         version: 1.6.22
@@ -234,7 +237,7 @@ importers:
         version: 2.1.11(@babel/core@7.26.0)(@babel/traverse@7.25.9)(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.28.1)(terser@5.36.0)(type-fest@0.21.3)
       '@codezoul/design-system.button':
         specifier: workspace:*
-        version: file:design-system/button(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.1)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.28.1)(react@18.3.1)(terser@5.36.0)(typescript@5.6.3)
+        version: file:design-system/button(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.1)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.28.1)(react@18.3.1)(terser@5.36.0)(typescript@5.6.3)(vitest@2.1.4(@types/node@20.12.10)(jsdom@24.1.3)(less@4.2.0)(lightningcss@1.28.1)(sass@1.80.6)(terser@5.36.0))
       '@mdx-js/mdx':
         specifier: ^1.6.22
         version: 1.6.22
@@ -1103,6 +1106,7 @@ packages:
     peerDependencies:
       '@testing-library/react': ^16.0.0
       react: ^17.0.0 || ^18.0.0
+      vitest: ^2.0.4
 
   '@csstools/normalize.css@12.1.1':
     resolution: {integrity: sha512-YAYeJ+Xqh7fUou1d1j9XHl44BmsuThiTr4iNrgCQ3J27IbhXsxXDGZ1cXv8Qvs99d4rBbLiSKy3+WZiet32PcQ==}
@@ -10233,7 +10237,7 @@ snapshots:
       react-error-overlay: 6.0.9
       strip-ansi: 6.0.0
 
-  '@codezoul/design-system.button@file:design-system/button(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.1)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.28.1)(react@18.3.1)(terser@5.36.0)(typescript@5.6.3)':
+  '@codezoul/design-system.button@file:design-system/button(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.1)(@types/react@18.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.28.1)(react@18.3.1)(terser@5.36.0)(typescript@5.6.3)(vitest@2.1.4(@types/node@20.12.10)(jsdom@24.1.3)(less@4.2.0)(lightningcss@1.28.1)(sass@1.80.6)(terser@5.36.0))':
     dependencies:
       '@apollo/client': 3.11.8(@types/react@18.3.0)(graphql@16.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@mdx-js/mdx': 1.6.22
@@ -10270,21 +10274,17 @@ snapshots:
       vitest: 2.1.4(@types/node@20.12.10)(jsdom@24.1.3)(less@4.2.0)(lightningcss@1.28.1)(sass@1.80.6)(terser@5.36.0)
       webpack: 5.96.1(esbuild@0.14.29)
     transitivePeerDependencies:
-      - '@edge-runtime/vm'
       - '@swc/core'
       - '@vitest/browser'
-      - '@vitest/ui'
       - bufferutil
       - canvas
       - esbuild
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - graphql-ws
-      - happy-dom
       - jest
       - less
       - lightningcss
-      - msw
       - sass-embedded
       - stylus
       - subscriptions-transport-ws

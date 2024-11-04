@@ -11,10 +11,17 @@
 {
     "button": {
         "name": "button",
-        "scope": "codezoul.design-system",
-        "version": "1.0.0",
+        "scope": "",
+        "version": "",
+        "defaultScope": "codezoul.design-system",
         "mainFile": "index.ts",
-        "rootDir": "design-system/button"
+        "rootDir": "design-system/button",
+        "config": {
+            "bitdev.react/react-env@2.1.11": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.react/react-env"
+            }
+        }
     },
     "$schema-version": "17.0.0"
 }

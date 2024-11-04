@@ -11,8 +11,9 @@
 {
     "button": {
         "name": "button",
-        "scope": "codezoul.design-system",
+        "scope": "",
         "version": "1.0.0",
+        "defaultScope": "codezoul.design-system",
         "mainFile": "index.ts",
         "rootDir": "design-system/button"
     },

@@ -1,19 +1,53 @@
 ---
-description: A Button component.
+description: A Button component that provides interactive elements for user actions.
+labels: ['button', 'ui-component', 'interaction']
 ---
 
 import { Button } from './button';
 
 ## Basic usage
 
-Use the button component:
+The Button component is a versatile interactive element that can be used for actions, submissions, and navigation.
 
 ```js
-<Button />
+<Button>Click me</Button>
 ```
 
-### Display the text
+### Variants
+
+You can use different button variants:
 
 ```js live
-<Button>Hello world!</Button>
+<div style={{ display: 'flex', gap: '8px' }}>
+  <Button>Default Button</Button>
+  <Button variant="primary">Primary Button</Button>
+  <Button variant="secondary">Secondary Button</Button>
+</div>
 ```
+
+### Disabled State
+
+Buttons can be disabled to prevent user interaction:
+
+```js live
+<Button disabled>Disabled Button</Button>
+```
+
+### With onClick Handler
+
+Buttons can handle click events:
+
+```js live
+<Button onClick={() => alert('Button clicked!')}>
+  Click to trigger alert
+</Button>
+```
+
+## Properties
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| variant | 'default' \| 'primary' \| 'secondary' | 'default' | The visual style variant of the button |
+| disabled | boolean | false | Whether the button is disabled |
+| onClick | function | undefined | Function called when the button is clicked |
+| children | ReactNode | undefined | The content to be rendered inside the button |

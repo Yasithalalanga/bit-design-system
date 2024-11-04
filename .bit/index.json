@@ -7,6 +7,14 @@
       },
       "isSymlink": false,
       "hash": "332d61722e10572fbaef5995407ebdce773c6a7e"
+    },
+    {
+      "id": {
+        "scope": "codezoul.design-system",
+        "name": "button"
+      },
+      "isSymlink": false,
+      "hash": "a5eb29f89ffd9215da70182c505a158ca2983b4e"
     }
   ],
   "lanes": []

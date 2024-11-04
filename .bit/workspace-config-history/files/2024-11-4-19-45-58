@@ -53,14 +53,15 @@
      * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
      */
     "packageManager": "teambit.dependencies/pnpm",
+    "rootComponents": true,
     "policy": {
-      "dependencies": {
-        "@jest/globals": "^29.7.0"
-      },
-      "peerDependencies": {}
-    },
-    "linkCoreAspects": true,
-    "rootComponents": true
+      "dependencies": {},
+      "peerDependencies": {},
+      "devDependencies": {
+        "@types/jest": "^29.5.0",
+        "jest": "^29.5.0"
+      }
+    }
   },
   "teambit.workspace/workspace-config-files": {
     "enableWorkspaceConfigWrite": true
